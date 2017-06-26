@@ -66,6 +66,16 @@
     
     return YES;
 }
+- (instancetype )init {
+    if ((self = [super init])) {
+        NSLog(@"CHINA INIT %@ ",self);
+    }
+    return self;
+}
+
+-(void)dealloc {
+    NSLog(@"CHINA DEALLOCATION %@ ",self);
+}
 
 @end
 
